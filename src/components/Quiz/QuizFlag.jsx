@@ -5,7 +5,8 @@ function QuizFlag ({ flagQuestion }) {
   const {options, answers} = flagQuestion;
   const flagSizes = {
     width: '2cm',
-    height: '2cm',
+    height: 'auto',
+    aspect: '200 / 150',
   }
 
   return (

@@ -1,5 +1,5 @@
 import QuizQuestion from './QuizQuestion.jsx';
-import QuizHint from './QuizHint.jsx';
+import QuizExtraInfo from './QuizExtraInfo.jsx';
 import QuizDictionary from './QuizDictionary.jsx';
 import QuizOptions from './QuizOptions.jsx';
 import QuizAnswers from './QuizAnswers.jsx';
@@ -13,7 +13,10 @@ function QuizItem({ question }) {
     <div className="quizItem">
       <div className="quizItem__level">
         <QuizQuestion text={ mainQuestion.text } />
-        <QuizHint text={ mainQuestion.hint } />
+        <QuizExtraInfo
+          caption="Hint"
+          text={mainQuestion.hint}
+        />
         { mainQuestion.vocabulary.length > 0 && <QuizDictionary items={ mainQuestion.vocabulary } /> }
         <QuizOptions options={ mainQuestion.options } />
         <QuizAnswers answers={ mainQuestion.answers } />

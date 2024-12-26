@@ -10,10 +10,12 @@
 }
 
 .quizItem__level {
-    display: grid;
     padding: 16px;
-    gap: 16px;
     border-bottom: 1px dotted;
+
+    &:last-child {
+        border-bottom: none;
+    }
 }
 
 .quizQuestion {
@@ -21,7 +23,8 @@
 }
 
 .quizSubquestion {
-
+    display: grid;
+    gap: 16px;
 }
 
 .quizSubquestion__title {
@@ -29,16 +32,15 @@
     font-size: 1rem;
 }
 
-.quizHint {
-    display: flex;
-    gap: 1ch;
-    opacity: 0.8;
-    font-size: 12px;
+.quizExtraInfo {
+    display: grid;
+    font-size: 14px;
+}
 
-    &::before {
-        content: "Tip:";
-        opacity: 0.8;
-    }
+.quizHint__caption {
+    margin: 0;
+    font-size: 12px;
+    opacity: 0.8;
 }
 
 .quizDictionary {
@@ -69,17 +71,14 @@
 
 .quizOptions {
     display: grid;
-    gap: 4px;
+    gap: 16px;
     grid-template-columns: repeat(2, 1fr);
-    place-items: start;
+    place-items: center;
+    place-content: center;
     margin: 0;
     padding: 0;
     list-style-position: inside;
     font-size: 1rem;
-
-    li {
-        padding: 4px;
-    }
 }
 
 .quizAnswers {

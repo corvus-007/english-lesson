@@ -133,7 +133,9 @@ export const unitsQuestions = [
   },
   {
     text: 'How many nautical miles are in one degree of latitude?',
-    vocabulary: [],
+    vocabulary: [
+      ['nautical', 'морской']
+    ],
     options: [
       '60 nautical miles',
       '45 nautical miles',
@@ -142,6 +144,9 @@ export const unitsQuestions = [
     ],
     answers: ['60 nautical miles'],
     explanation: 'One degree of latitude corresponds to approximately 60 nautical miles, based on Earth\'s spherical shape.',
+    explanationVocabulary: [
+      ['latitude', 'широта']
+    ]
   },
   {
     text: 'Which unit is commonly used to measure height in aviation?',
@@ -154,6 +159,9 @@ export const unitsQuestions = [
     ],
     answers: ['Feet'],
     explanation: 'Aviation altitudes are typically measured in feet for standardization across international aviation.',
+    explanationVocabulary: [
+      ['altitude', 'высота'],
+    ]
   },
   {
     text: 'What is the length of a marathon in kilometers?',
