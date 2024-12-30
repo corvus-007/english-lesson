@@ -1,15 +1,20 @@
 import QuizOptions from './QuizOptions.jsx';
 import QuizAnswers from './QuizAnswers.jsx';
+import QuizBoxItem from './QuizBoxItem.jsx';
+import QuizBox from './QuizBox.jsx';
 
 function QuizPopulation({ populationQuestion }) {
   const { options, answers } = populationQuestion;
 
   return (
-    <section className='quizSubquestion'>
-      <h2 className="quizSubquestion__title">Population</h2>
-      <QuizOptions options={ options } />
-      <QuizAnswers answers={ answers } />
-    </section>
+    <QuizBox>
+      <QuizBoxItem>
+        <QuizOptions options={ options } />
+      </QuizBoxItem>
+      <QuizBoxItem>
+        <QuizAnswers answers={ answers } />
+      </QuizBoxItem>
+    </QuizBox>
   );
 }
 

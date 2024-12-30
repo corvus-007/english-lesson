@@ -5,28 +5,32 @@ import QuizOptions from './QuizOptions.jsx';
 import QuizAnswers from './QuizAnswers.jsx';
 import QuizPopulation from './QuizPopulation.jsx';
 import QuizFlag from './QuizFlag.jsx';
+import QuizBox from './QuizBox.jsx';
+import QuizBoxItem from './QuizBoxItem.jsx';
 
 function QuizItem({ question }) {
   const { mainQuestion, subquestions } = question;
 
   return (
     <div className="quizItem">
-      <div className="quizItem__level">
-        <QuizQuestion text={ mainQuestion.text } />
-        <QuizExtraInfo
-          caption="Hint"
-          text={mainQuestion.hint}
-        />
-        { mainQuestion.vocabulary.length > 0 && <QuizDictionary items={ mainQuestion.vocabulary } /> }
-        <QuizOptions options={ mainQuestion.options } />
-        <QuizAnswers answers={ mainQuestion.answers } />
-      </div>
-      <div className="quizItem__level">
-        <QuizPopulation populationQuestion={subquestions.population} />
-      </div>
-      <div className="quizItem__level">
-        <QuizFlag flagQuestion={subquestions.flag}></QuizFlag>
-      </div>
+      <QuizBox>
+        <QuizBoxItem>
+          <div>
+            <QuizQuestion text={ mainQuestion.text } />
+            <QuizExtraInfo
+              caption="Hint"
+              text={ mainQuestion.hint }
+            />
+            { mainQuestion.vocabulary.length > 0 && <QuizDictionary items={ mainQuestion.vocabulary } /> }
+          </div>
+          <QuizOptions options={ mainQuestion.options } />
+        </QuizBoxItem>
+        <QuizBoxItem>
+          <QuizAnswers answers={ mainQuestion.answers } />
+        </QuizBoxItem>
+      </QuizBox>
+      <QuizPopulation populationQuestion={ subquestions.population } />
+      <QuizFlag flagQuestion={ subquestions.flag }></QuizFlag>
     </div>
   );
 }

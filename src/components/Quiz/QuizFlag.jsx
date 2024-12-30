@@ -1,21 +1,26 @@
 import QuizFlagOptions from './QuizFlagOptions.jsx';
 import QuizFlagAnswers from './QuizFlagAnswers.jsx';
+import QuizBoxItem from './QuizBoxItem.jsx';
+import QuizBox from './QuizBox.jsx';
 
-function QuizFlag ({ flagQuestion }) {
-  const {options, answers} = flagQuestion;
+function QuizFlag({ flagQuestion }) {
+  const { options, answers } = flagQuestion;
   const flagSizes = {
     width: '2cm',
     height: 'auto',
     aspect: '200 / 150',
-  }
+  };
 
   return (
-    <section className="quizSubquestion">
-      <h2 className="quizSubquestion__title">Flag</h2>
-      <QuizFlagOptions options={options} flagSizes={flagSizes} />
-      <QuizFlagAnswers answers={answers} flagSizes={flagSizes} />
-    </section>
-  )
+    <QuizBox>
+      <QuizBoxItem>
+        <QuizFlagOptions options={ options } flagSizes={ flagSizes } />
+      </QuizBoxItem>
+      <QuizBoxItem>
+        <QuizFlagAnswers answers={ answers } flagSizes={ flagSizes } />
+      </QuizBoxItem>
+    </QuizBox>
+  );
 }
 
 export default QuizFlag;
