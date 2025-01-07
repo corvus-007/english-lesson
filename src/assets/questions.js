@@ -193,7 +193,7 @@ export const questions = [
   {
     mainQuestion: {
       text: 'This country’s vast landscapes include red deserts, kangaroos, and the Great Barrier Reef. It’s known for its laid-back lifestyle and iconic Sydney Opera House.',
-      hint: 'Down Under.',
+      hint: 'Down Under.🧐',
       vocabulary: [
         ['vast', 'обширный, бескрайний'],
         ['laid-back', 'спокойный, вальяжный, непринужденный'],
@@ -254,7 +254,7 @@ export const questions = [
   {
     mainQuestion: {
       text: 'This European country is famous for its chocolate, watches, and the Alps. Neutrality in politics and banking are key characteristics of its identity.',
-      hint: 'Known for yodeling and fondue.',
+      hint: 'Known for yodeling  and fondue.',
       vocabulary: [],
       options: [
         'Austria',
@@ -313,7 +313,11 @@ export const questions = [
     mainQuestion: {
       text: 'Famous for its tulip fields, windmills, and canals, this country is a leader in environmental sustainability. Its capital is known for its museums and liberal culture.',
       hint: 'Think of bicycles and wooden clogs.',
-      vocabulary: [],
+      vocabulary: [
+        ['windmill', 'ветряная мельница'],
+        ['sustainability', 'устойчивость'],
+        ['clog', 'башмак, колодка'],
+      ],
       options: [
         'Belgium',
         'Netherlands',
@@ -340,9 +344,13 @@ export const questions = [
   },
   {
     mainQuestion: {
-      text: 'This Nordic country is known for its beautiful fjords, Vikings, and the Northern Lights. Its wealth is largely derived from oil and gas.',
+      text: 'This Nordic country is known for its beautiful fjords🧐, Vikings, and the Northern Lights. Its wealth is largely derived from oil and gas.',
       hint: 'The land of trolls and midnight sun.',
-      vocabulary: [],
+      vocabulary: [
+        ['fjord', 'фьорд/фиорд'],
+        ['wealth', 'богатство'],
+        ['derive from', 'быть производным от']
+      ],
       options: [
         'Sweden',
         'Iceland',
@@ -429,7 +437,9 @@ export const questions = [
     mainQuestion: {
       text: 'Known as the "Land of Fire and Ice," this country features volcanoes, glaciers, and geysers. Its Blue Lagoon is a famous tourist destination.',
       hint: 'Small island nation in the North Atlantic.',
-      vocabulary: [],
+      vocabulary: [
+        ['glacier', 'ледник']
+      ],
       options: [
         'Norway',
         'Greenland',

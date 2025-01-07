@@ -2,6 +2,7 @@ import QuizFlagOptions from './QuizFlagOptions.jsx';
 import QuizFlagAnswers from './QuizFlagAnswers.jsx';
 import QuizBoxItem from './QuizBoxItem.jsx';
 import QuizBox from './QuizBox.jsx';
+import CaptionBox from '../UI/CaptionBox.jsx';
 
 function QuizFlag({ flagQuestion }) {
   const { options, answers } = flagQuestion;
@@ -12,9 +13,11 @@ function QuizFlag({ flagQuestion }) {
   };
 
   return (
-    <QuizBox>
+    <QuizBox ratio={1/1}>
       <QuizBoxItem>
-        <QuizFlagOptions options={ options } flagSizes={ flagSizes } />
+        <CaptionBox caption="Flag">
+          <QuizFlagOptions className="contentCenter" options={options} flagSizes={flagSizes}/>
+        </CaptionBox>
       </QuizBoxItem>
       <QuizBoxItem>
         <QuizFlagAnswers answers={ answers } flagSizes={ flagSizes } />

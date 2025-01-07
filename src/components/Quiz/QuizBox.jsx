@@ -1,6 +1,6 @@
-const QuizBox = ({children}) => {
+const QuizBox = ({ children, ratio = 1 }) => {
   return (
-    <div className="quizBox">
+    <div className="quizBox" style={{ aspectRatio: ratio }}>
       {children}
     </div>
   );

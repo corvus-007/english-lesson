@@ -2,14 +2,17 @@ import QuizOptions from './QuizOptions.jsx';
 import QuizAnswers from './QuizAnswers.jsx';
 import QuizBoxItem from './QuizBoxItem.jsx';
 import QuizBox from './QuizBox.jsx';
+import CaptionBox from '../UI/CaptionBox.jsx';
 
 function QuizPopulation({ populationQuestion }) {
   const { options, answers } = populationQuestion;
 
   return (
-    <QuizBox>
+    <QuizBox ratio={2/1.4}>
       <QuizBoxItem>
-        <QuizOptions options={ options } />
+        <CaptionBox caption="Population">
+          <QuizOptions className="contentCenter" options={options}/>
+        </CaptionBox>
       </QuizBoxItem>
       <QuizBoxItem>
         <QuizAnswers answers={ answers } />

@@ -1,9 +1,9 @@
 import ReactCountryFlag from 'react-country-flag';
 import { shuffle } from 'lodash';
 
-function QuizFlagOptions({ options, flagSizes }) {
+function QuizFlagOptions({ options, flagSizes, className }) {
   return (
-    <ol className="quizOptions" type="a">
+    <ol className={`quizOptions ${className}`} type="a">
       { shuffle(options).map((option, index) => (
         <li key={ index }>
           <ReactCountryFlag

@@ -8,7 +8,7 @@ import QuizBoxItem from './QuizBoxItem.jsx';
 function QuizUnitQuestion({ question }) {
   return (
     <div className="quizItem">
-      <QuizBox>
+      <QuizBox ratio={1/1.1}>
         <QuizBoxItem>
           <QuizQuestion text={ question.text } />
           <QuizOptions options={ question.options } />
@@ -16,7 +16,6 @@ function QuizUnitQuestion({ question }) {
         <QuizBoxItem>
           <QuizAnswers answers={ question.answers } />
           <QuizExtraInfo
-            caption="Explanation"
             text={ question.explanation }
           />
         </QuizBoxItem>

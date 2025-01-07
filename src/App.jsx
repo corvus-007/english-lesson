@@ -5,16 +5,15 @@ import QuizItem from './components/Quiz/QuizItem.jsx';
 import { unitsQuestions } from './assets/units-questions.js';
 import QuizUnitQuestion from './components/Quiz/QuizUnitQuestion.jsx';
 
-console.log(questions);
-console.log(unitsQuestions);
 function App() {
   return (
     <div>
       <div className="quizContainer">
-        { questions.map((question, index) => (<QuizItem key={ 'countryQ' + index } question={ question } />)) }
+        {questions.map((question, index) => (
+          <QuizItem key={'countryQ' + index} question={question}/>))}
       </div>
       <div className="quizContainer">
-        { unitsQuestions.map((question, index) => (<QuizUnitQuestion key={ 'unitQ' + index } question={ question } />)) }
+        {unitsQuestions.map((question, index) => (<QuizUnitQuestion key={'unitQ' + index} question={question}/>))}
       </div>
     </div>
   );

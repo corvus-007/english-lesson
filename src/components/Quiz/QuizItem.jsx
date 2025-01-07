@@ -7,30 +7,31 @@ import QuizPopulation from './QuizPopulation.jsx';
 import QuizFlag from './QuizFlag.jsx';
 import QuizBox from './QuizBox.jsx';
 import QuizBoxItem from './QuizBoxItem.jsx';
+import GapBox from '../UI/GapBox.jsx';
 
 function QuizItem({ question }) {
   const { mainQuestion, subquestions } = question;
 
   return (
     <div className="quizItem">
-      <QuizBox>
+      <QuizBox ratio={5 / 7.3}>
         <QuizBoxItem>
-          <div>
-            <QuizQuestion text={ mainQuestion.text } />
+          <GapBox>
+            <QuizQuestion text={mainQuestion.text}/>
             <QuizExtraInfo
               caption="Hint"
-              text={ mainQuestion.hint }
+              text={mainQuestion.hint}
             />
-            { mainQuestion.vocabulary.length > 0 && <QuizDictionary items={ mainQuestion.vocabulary } /> }
-          </div>
-          <QuizOptions options={ mainQuestion.options } />
+            {mainQuestion.vocabulary.length > 0 && <QuizDictionary items={mainQuestion.vocabulary}/>}
+          </GapBox>
+          <QuizOptions options={mainQuestion.options}/>
         </QuizBoxItem>
         <QuizBoxItem>
-          <QuizAnswers answers={ mainQuestion.answers } />
+          <QuizAnswers answers={mainQuestion.answers}/>
         </QuizBoxItem>
       </QuizBox>
-      <QuizPopulation populationQuestion={ subquestions.population } />
-      <QuizFlag flagQuestion={ subquestions.flag }></QuizFlag>
+      <QuizPopulation populationQuestion={subquestions.population}/>
+      <QuizFlag flagQuestion={subquestions.flag}></QuizFlag>
     </div>
   );
 }

@@ -1,11 +1,11 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.25;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+  /*max-width: 297mm;*/
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -61,4 +61,30 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.captionBox {
+  display: inherit;
+  grid-auto-rows: inherit;
+  gap: inherit;
+  /*position: relative;*/
+}
+
+.captionBox__caption {
+  /*position: absolute;*/
+  margin: 0;
+  font-size: 8pt;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+.gapBox {
+  display: grid;
+  place-content: start;
+  gap: 1mm;
+}
+
+
+.contentCenter {
+  place-content: center !important;
 }

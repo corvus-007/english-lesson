@@ -9,7 +9,7 @@ export const unitsQuestions = [
       '1.809 km',
     ],
     answers: ['1.609 km'],
-    explanation: 'One mile is equal to approximately 1.609 kilometers, a standard conversion used in the metric and imperial systems.',
+    explanation: '',
   },
   {
     text: 'What is the shortest unit of length commonly used in the metric system?',
@@ -25,7 +25,10 @@ export const unitsQuestions = [
   },
   {
     text: 'How many feet are in one yard?',
-    vocabulary: [],
+    vocabulary: [
+      ['foot', 'стопа, фут'],
+      ['feet', 'стопы, футы'],
+    ],
     options: [
       '2 feet',
       '3 feet',
@@ -33,11 +36,14 @@ export const unitsQuestions = [
       '5 feet',
     ],
     answers: ['3 feet'],
-    explanation: 'A yard is defined as 3 feet in the imperial system of measurements.',
+    explanation: '',
   },
   {
     text: 'Which unit is commonly used to measure the depth of oceans?',
-    vocabulary: [],
+    vocabulary: [
+      ['fathom', 'морская сажень'],
+      ['nautical', 'морской'],
+    ],
     options: [
       'Meter',
       'Foot',
@@ -49,7 +55,9 @@ export const unitsQuestions = [
   },
   {
     text: 'How many inches are in one foot?',
-    vocabulary: [],
+    vocabulary: [
+      ['inch', 'дюйм'],
+    ],
     options: [
       '10 inches',
       '12 inches',
@@ -57,32 +65,32 @@ export const unitsQuestions = [
       '16 inches',
     ],
     answers: ['12 inches'],
-    explanation: 'A foot contains 12 inches, a standard unit of measurement in the imperial system.',
+    explanation: '',
   },
-  {
-    text: 'What is the approximate cruising speed of a commercial airplane in kilometers per hour?',
-    vocabulary: [],
-    options: [
-      '600–700 km/h',
-      '700–900 km/h',
-      '1,000–1,200 km/h',
-      '1,300–1,500 km/h',
-    ],
-    answers: ['700–900 km/h'],
-    explanation: 'Most commercial airplanes cruise at speeds between 700 and 900 km/h, depending on the model and conditions.',
-  },
-  {
-    text: 'What is the standard length of a lap in athletics on an outdoor track?',
-    vocabulary: [],
-    options: [
-      '300 meters',
-      '400 meters',
-      '500 meters',
-      '600 meters',
-    ],
-    answers: ['400 meters'],
-    explanation: 'A standard outdoor running track has a length of 400 meters per lap, widely used in competitive athletics.',
-  },
+  // {
+  //   text: 'What is the approximate cruising speed of a commercial airplane in kilometers per hour?',
+  //   vocabulary: [],
+  //   options: [
+  //     '600–700 km/h',
+  //     '700–900 km/h',
+  //     '1,000–1,200 km/h',
+  //     '1,300–1,500 km/h',
+  //   ],
+  //   answers: ['700–900 km/h'],
+  //   explanation: 'Most commercial airplanes cruise at speeds between 700 and 900 km/h, depending on the model and conditions.',
+  // },
+  // {
+  //   text: 'What is the standard length of a lap in athletics on an outdoor track?',
+  //   vocabulary: [],
+  //   options: [
+  //     '300 meters',
+  //     '400 meters',
+  //     '500 meters',
+  //     '600 meters',
+  //   ],
+  //   answers: ['400 meters'],
+  //   explanation: 'A standard outdoor running track has a length of 400 meters per lap, widely used in competitive athletics.',
+  // },
   {
     text: 'Which unit of length is used to measure distances in space?',
     vocabulary: [],
@@ -93,20 +101,20 @@ export const unitsQuestions = [
       'Fathom',
     ],
     answers: ['Light-year'],
-    explanation: 'A light-year is the distance light travels in one year, used for astronomical measurements of vast distances.',
+    explanation: '',
   },
-  {
-    text: 'What is the maximum speed of a high-speed train, such as the Shinkansen in Japan?',
-    vocabulary: [],
-    options: [
-      '200–250 km/h',
-      '300–350 km/h',
-      '400–450 km/h',
-      '500–550 km/h',
-    ],
-    answers: ['300–350 km/h'],
-    explanation: 'High-speed trains like the Shinkansen operate at speeds within this range, depending on the route and model.',
-  },
+  // {
+  //   text: 'What is the maximum speed of a high-speed train, such as the Shinkansen in Japan?',
+  //   vocabulary: [],
+  //   options: [
+  //     '200–250 km/h',
+  //     '300–350 km/h',
+  //     '400–450 km/h',
+  //     '500–550 km/h',
+  //   ],
+  //   answers: ['300–350 km/h'],
+  //   explanation: 'High-speed trains like the Shinkansen operate at speeds within this range, depending on the route and model.',
+  // },
   {
     text: 'How many centimeters are in one meter?',
     vocabulary: [],
@@ -117,7 +125,7 @@ export const unitsQuestions = [
       '1,500 cm',
     ],
     answers: ['100 cm'],
-    explanation: 'The metric system defines 1 meter as equal to 100 centimeters.',
+    explanation: '',
   },
   {
     text: 'What is the typical speed of a walking person in kilometers per hour?',
@@ -131,23 +139,23 @@ export const unitsQuestions = [
     answers: ['3–4 km/h'],
     explanation: 'The average walking speed of a human is around 3 to 4 kilometers per hour, depending on stride length and pace.',
   },
-  {
-    text: 'How many nautical miles are in one degree of latitude?',
-    vocabulary: [
-      ['nautical', 'морской']
-    ],
-    options: [
-      '60 nautical miles',
-      '45 nautical miles',
-      '30 nautical miles',
-      '15 nautical miles',
-    ],
-    answers: ['60 nautical miles'],
-    explanation: 'One degree of latitude corresponds to approximately 60 nautical miles, based on Earth\'s spherical shape.',
-    explanationVocabulary: [
-      ['latitude', 'широта']
-    ]
-  },
+  // {
+  //   text: 'How many nautical miles are in one degree of latitude?',
+  //   vocabulary: [
+  //     ['nautical', 'морской'],
+  //   ],
+  //   options: [
+  //     '60 nautical miles',
+  //     '45 nautical miles',
+  //     '30 nautical miles',
+  //     '15 nautical miles',
+  //   ],
+  //   answers: ['60 nautical miles'],
+  //   explanation: 'One degree of latitude corresponds to approximately 60 nautical miles, based on Earth\'s spherical shape.',
+  //   explanationVocabulary: [
+  //     ['latitude', 'широта'],
+  //   ],
+  // },
   {
     text: 'Which unit is commonly used to measure height in aviation?',
     vocabulary: [],
@@ -161,7 +169,7 @@ export const unitsQuestions = [
     explanation: 'Aviation altitudes are typically measured in feet for standardization across international aviation.',
     explanationVocabulary: [
       ['altitude', 'высота'],
-    ]
+    ],
   },
   {
     text: 'What is the length of a marathon in kilometers?',
@@ -173,7 +181,7 @@ export const unitsQuestions = [
       '43.295 km',
     ],
     answers: ['42.195 km'],
-    explanation: 'A marathon is precisely 42.195 kilometers, as defined by international athletic standards.',
+    explanation: '',
   },
   {
     text: 'What is the average diameter of the Earth at the equator in kilometers?',
@@ -185,31 +193,33 @@ export const unitsQuestions = [
       '18,365 km',
     ],
     answers: ['12,742 km'],
-    explanation: 'Earth\'s equatorial diameter is approximately 12,742 kilometers, based on scientific measurements.',
+    explanation: '',
   },
+  // {
+  //   text: 'What is the approximate top speed of a Formula 1 car in kilometers per hour?',
+  //   vocabulary: [],
+  //   options: [
+  //     '250 km/h',
+  //     '300 km/h',
+  //     '350 km/h',
+  //     '400 km/h',
+  //   ],
+  //   answers: ['350 km/h'],
+  //   explanation: 'Formula 1 cars can reach top speeds of around 350 km/h, depending on the circuit and car design.',
+  // },
   {
-    text: 'What is the approximate top speed of a Formula 1 car in kilometers per hour?',
-    vocabulary: [],
-    options: [
-      '250 km/h',
-      '300 km/h',
-      '350 km/h',
-      '400 km/h',
+    text: 'How long is one furlong🧐 in meters?',
+    vocabulary: [
+      ['furlong', 'фурлонг'],
     ],
-    answers: ['350 km/h'],
-    explanation: 'Formula 1 cars can reach top speeds of around 350 km/h, depending on the circuit and car design.',
-  },
-  {
-    text: 'How long is one furlong in meters?',
-    vocabulary: [],
     options: [
-      '160.9 meters',
-      '180.9 meters',
-      '200.9 meters',
-      '220.9 meters',
+      '161 meters',
+      '181 meters',
+      '201 meters',
+      '221 meters',
     ],
-    answers: ['160.9 meters'],
-    explanation: 'A furlong is a traditional unit of distance equal to 220 yards, or approximately 160.9 meters.',
+    answers: ['201 meters'],
+    explanation: '',
   },
   {
     text: 'What is the speed of sound in dry air at 20°C in kilometers per hour?',
@@ -225,7 +235,9 @@ export const unitsQuestions = [
   },
   {
     text: 'How many kilometers are in one nautical mile?',
-    vocabulary: [],
+    vocabulary: [
+      ['nautical', 'морской']
+    ],
     options: [
       '1.615 km',
       '1.785 km',
@@ -233,20 +245,20 @@ export const unitsQuestions = [
       '1.945 km',
     ],
     answers: ['1.852 km'],
-    explanation: 'A nautical mile is precisely defined as 1.852 kilometers, used for navigation in maritime and aviation contexts.',
+    explanation: '',
   },
-  {
-    text: 'What is the approximate top speed of a cheetah in kilometers per hour?',
-    vocabulary: [],
-    options: [
-      '80 km/h',
-      '90 km/h',
-      '100 km/h',
-      '120 km/h',
-    ],
-    answers: ['100 km/h'],
-    explanation: 'Cheetahs are the fastest land animals, capable of reaching speeds of up to 100 km/h over short distances.',
-  },
+  // {
+  //   text: 'What is the approximate top speed of a cheetah in kilometers per hour?',
+  //   vocabulary: [],
+  //   options: [
+  //     '80 km/h',
+  //     '90 km/h',
+  //     '100 km/h',
+  //     '120 km/h',
+  //   ],
+  //   answers: ['100 km/h'],
+  //   explanation: 'Cheetahs are the fastest land animals, capable of reaching speeds of up to 100 km/h over short distances.',
+  // },
   {
     text: 'Which is the longest unit of length?',
     vocabulary: [],
@@ -257,32 +269,32 @@ export const unitsQuestions = [
       'Furlong',
     ],
     answers: ['Light-year'],
-    explanation: 'A light-year is much longer than a kilometer, mile, or furlong, representing the distance light travels in a year.',
+    explanation: '',
   },
-  {
-    text: 'How long is a football field (including end zones) in meters?',
-    vocabulary: [],
-    options: [
-      '80 meters',
-      '91 meters',
-      '100 meters',
-      '110 meters',
-    ],
-    answers: ['91 meters'],
-    explanation: 'An American football field, including end zones, is 120 yards (approximately 91 meters) in length.',
-  },
-  {
-    text: 'What is the standard length of an Olympic swimming pool?',
-    vocabulary: [],
-    options: [
-      '25 meters',
-      '50 meters',
-      '75 meters',
-      '100 meters',
-    ],
-    answers: ['50 meters'],
-    explanation: 'Olympic-standard swimming pools are precisely 50 meters in length for competitive events.',
-  },
+  // {
+  //   text: 'How long is a football field (including end zones) in meters?',
+  //   vocabulary: [],
+  //   options: [
+  //     '80 meters',
+  //     '91 meters',
+  //     '100 meters',
+  //     '110 meters',
+  //   ],
+  //   answers: ['91 meters'],
+  //   explanation: 'An American football field, including end zones, is 120 yards (approximately 91 meters) in length.',
+  // },
+  // {
+  //   text: 'What is the standard length of an Olympic swimming pool?',
+  //   vocabulary: [],
+  //   options: [
+  //     '25 meters',
+  //     '50 meters',
+  //     '75 meters',
+  //     '100 meters',
+  //   ],
+  //   answers: ['50 meters'],
+  //   explanation: 'Olympic-standard swimming pools are precisely 50 meters in length for competitive events.',
+  // },
   {
     text: 'How many kilometers can light travel in one second?',
     vocabulary: [],
@@ -292,8 +304,8 @@ export const unitsQuestions = [
       '300,000 km',
       '400,000 km',
     ],
-    answers: ['50 meters'],
-    explanation: 'Light travels at approximately 300,000 kilometers per second in a vacuum, a fundamental constant of physics.',
+    answers: ['300,000 km'],
+    explanation: '',
   },
   {
     text: 'What is the approximate top speed of a sailboat in knots?',
