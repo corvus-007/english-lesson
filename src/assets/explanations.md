@@ -29,13 +29,6 @@
 
 **Travel Quiz: 15 Questions**
 
-
-4. **Which city is known as the “Big Apple”?**
-    - A) Los Angeles
-    - B) New York
-    - C) Chicago
-    - D) San Francisco
-
 5. **Which desert is the largest in the world?**
     - A) Sahara
     - B) Gobi
@@ -67,7 +60,7 @@
     - D) Denali
 
 **Answers Key**:
- 4. B, 5. A, 6. B, 10. B, 11. B, 13. B,
+ 5. A, 6. B, 10. B, 11. B, 13. B,
 
 
 
@@ -110,12 +103,6 @@
     - C) 193
     - D) 200
 
-13. **How many people can typically fit in a standard hot air balloon?**
-    - A) 4–8
-    - B) 10–12
-    - C) 15–20
-    - D) 25+
-
 14. **What is the world’s tallest waterfall?**
     - A) Angel Falls
     - B) Niagara Falls
@@ -123,4 +110,4 @@
     - D) Iguazu Falls
 
 **Answers Key:**
-1. B, 2. D, 3. B, 4. B, 5. B, 6. A, 7. B, 8. A, 9. A, 10. A, 11. A, 12. D, 13. A, 14. A, 15. B
+1. B, 2. D, 3. B, 4. B, 5. B, 6. A, 7. B, 8. A, 9. A, 10. A, 11. A, 12. D, 14. A,

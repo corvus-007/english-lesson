@@ -236,7 +236,7 @@ export const unitsQuestions = [
   {
     text: 'How many kilometers are in one nautical mile?',
     vocabulary: [
-      ['nautical', 'морской']
+      ['nautical', 'морской'],
     ],
     options: [
       '1.615 km',
@@ -330,5 +330,145 @@ export const unitsQuestions = [
     ],
     answers: ['30 km/s'],
     explanation: 'The Earth orbits the Sun at an average speed of approximately 29.78 kilometers per second, which is often rounded to 30 km/s. This speed allows the Earth to complete one revolution around the Sun in about 365.25 days.',
+  },
+  /*New questions #1*/
+  {
+    text: 'Which desert is the largest in the world?',
+    vocabulary: [],
+    options: [
+      'Sahara',
+      'Gobi',
+      'Atacama',
+      'Kalahari',
+    ],
+    answers: ['Sahara'],
+    explanation: 'The Sahara Desert, located in North Africa, spans about 9.2 million square kilometers.',
+  },
+  {
+    text: 'What is the longest river in the world?',
+    vocabulary: [],
+    options: [
+      'Nile',
+      'Amazon',
+      'Yangtze',
+      'Mississippi',
+    ],
+    answers: ['Amazon'],
+    explanation: 'Recent studies suggest the Amazon is slightly longer than the Nile, at around 7,000 km.',
+  },
+  {
+    text: 'What is the smallest country in the world by area?',
+    vocabulary: [],
+    options: [
+      'Monaco',
+      'Vatican City',
+      'Liechtenstein',
+      'San Marino',
+    ],
+    answers: ['Vatican City'],
+    explanation: 'Vatican City, an independent city-state within Rome, Italy, is only 44 hectares (110 acres) in size.',
+  },
+  {
+    text: 'In which ocean is the Maldives located?',
+    vocabulary: [],
+    options: [
+      'Atlantic',
+      'Indian',
+      'Pacific',
+      'Arctic',
+    ],
+    answers: ['Indian'],
+    explanation: 'The Maldives is an island nation in the Indian Ocean, known for its clear blue waters and coral reefs.',
+  },
+  {
+    text: 'What is the highest mountain in the world?',
+    vocabulary: [],
+    options: [
+      'Mount Kilimanjaro',
+      'Mount Everest',
+      'K2',
+      'Denali',
+    ],
+    answers: ['Mount Everest'],
+    explanation: 'Mount Everest, located in the Himalayas, stands at 8,849 meters (29,032 feet) above sea level.',
+  },
+  /*New questions #2*/
+  {
+    text: 'What is the longest recorded journey in history?',
+    vocabulary: [],
+    options: [
+      'Marco Polo’s journey to China',
+      'Ferdinand Magellan’s circumnavigation',
+      'The Apollo 11 mission',
+      'Ibn Battuta’s travels',
+    ],
+    answers: ['Ibn Battuta’s travels'],
+    explanation: '',
+  },
+  {
+    text: 'Which is the largest continent in the world by area?',
+    vocabulary: [],
+    options: [
+      'Africa',
+      'Asia',
+      'North America',
+      'Antarctica',
+    ],
+    answers: ['Asia'],
+    explanation: 'Asia covers around 44.58 million square kilometers, making it the largest continent.',
+  },
+  {
+    text: 'How many time zones does Russia have?',
+    vocabulary: [],
+    options: [
+      '9',
+      '11',
+      '7',
+      '5',
+    ],
+    answers: ['11'],
+    explanation: 'Russia spans 11 time zones, the most of any country due to its vast size.',
+    explanationVocabulary: [
+      ['vast', 'обширный, огромный']
+    ]
+  },
+  {
+    text: 'What is the smallest ocean in the world?',
+    vocabulary: [],
+    options: [
+      'Arctic Ocean',
+      'Indian Ocean',
+      'Southern Ocean',
+      'Atlantic Ocean',
+    ],
+    answers: ['Arctic Ocean'],
+    explanation: 'The Arctic Ocean is the smallest and shallowest of the world’s oceans, covering 14 million square kilometers.',
+    explanationVocabulary: [
+      ['shallow', 'неглубокий, мелкий'],
+    ],
+  },
+  {
+    text: 'How many countries are there in the world?',
+    vocabulary: [],
+    options: [
+      '195',
+      '205',
+      '193',
+      '200',
+    ],
+    answers: ['195'],
+    explanation: 'This count includes 193 UN member states and 2 observer states (Vatican City and Palestine)',
+  },
+  {
+    text: 'What is the world’s tallest waterfall?',
+    vocabulary: [],
+    options: [
+      'Angel Falls',
+      'Niagara Falls',
+      'Victoria Falls',
+      'Iguazu Falls',
+    ],
+    answers: ['Angel Falls'],
+    explanation: 'Located in Venezuela, Angel Falls drops 979 meters, making it the tallest waterfall on Earth.',
   },
 ];
